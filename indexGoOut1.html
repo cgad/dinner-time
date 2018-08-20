@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Project</title>
+    <!-- SCRIPTS AND CSS BELOW: -->
+    <!-- RESET, THEN BOOTSTRAP, THEN STYLE, THEN FIREBASE, THEN AJAX, THEN MATERIALIZE, THEN MOMENT, THEN JAVASCRIPT.-->
+     <!-- RESET CSS: -->
+     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+    <!-- BOOTSTRAP: -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- PERSONAL CSS: -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <!-- FIREBASE LINK: -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <!-- AJAX LINK: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- MATERALIZE LINK: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!--MOMENT LINK: -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- JAVASCRIPT TO PAGE: -->
+    <script type="text/javascript" src="assets/javascript/testOne.js"></script>
+    <!-- Google Fonts Link: -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+</head>
+<body>
+
+        <div class="jumbotron"> <!-- Jumbotron HTML-->
+        <h5>Food Processor</h5> 
+        <p>Find your flavor!</p> 
+      </div> <!-- JUMBOTRON HTML END-->
+
+        <div class="container">
+                <div id="info-window"> <!-- The info window that pops up when things are clicked upon.-->
+            <!-- OPTIONS FOR GOING OUT -->
+            <form>
+                    <div class="form-group">
+                        <label for="stay-in-or-go-out">Do you want to stay in or go out?</label>
+                    </div> 
+                    <a href ="stay-in.html" button class="btn btn-primary"  id="select-decision-one" type="submit" a href ="stay-in.html"> Stay In</button>
+                         </a> 
+                         <a href ="indexGoOut1.html" button class="btn btn-primary"  id="select-decision-two" type="submit" a href ="indexGoOut1.html"> Go Out    </button>
+                         </a> 
+                         <a href ="index1.html" button class="btn btn-primary"  id="select-decision-three" type="submit" a href ="index1.html"> I can't decide    </button>
+                            </a>
+                        </form>
+
+
+            <div class="container">
+                    <div class="map-info"> <!-- Overall holder for all map data. -->
+                            <div id="map"> <!-- The map itself. -->
+                                <!-- div class info window div end -->
+                        </div> <!-- div class map div end -->
+                    </div>  <!-- div class map info div end -->
+
+                    <div class="go-out">
+                            <div id="food-genres">
+                                <form> <!-- FOOD GENRES TYPES: -->
+                                    <div class="form-group">
+                                        <label for="food-type">What type of food are you interested in eating?</label>
+                                         <select name="genres"  id="food-type">
+                                            <option value="italian">Italian</option>
+                                            <option value="american">American</option>
+                                            <option value="indian">Indian</option>
+                                            <option value="mexican">Mexican</option>
+                                            <option value="chinese">Chinese</option>
+                                        </select> <!-- ID HERE -->
+                                    </div>
+                                    <button class="btn btn-primary" id="select-food-type" type="submit">Submit</button>
+                                  </form>
+                </div> <!-- div class info window div end -->
+            </div> <!-- div class map div end -->
+            
+<div class="container">
+    <div id="return-info">
+
+    </div> <!-- Div class return info end -->
+</div> <!-- Div class Container end -->
+
+
+        <!-- GOOGLE API SCRIPTS: -->
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0JwizcvstgWDQ6bVfXDc_KoaMmwj-VAA&libraries=places&callback=initMap" async defer></script>
+        <script type="text/javascript" src="assets/javascript/testOne.js"></script>
