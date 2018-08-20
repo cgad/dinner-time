@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stay In</title>
+    <title>Travel Project</title>
     <!-- SCRIPTS AND CSS BELOW: -->
     <!-- RESET, THEN BOOTSTRAP, THEN STYLE, THEN FIREBASE, THEN AJAX, THEN MATERIALIZE, THEN MOMENT, THEN JAVASCRIPT.-->
      <!-- RESET CSS: -->
@@ -21,58 +21,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!--MOMENT LINK: -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <!-- JAVASCRIPT TO PAGE: -->
-    <script type="text/javascript" src="assets/javascript/stay-in.js"></script>
-    <!-- Google Fonts Link: -->
+    <!-- NO JAVASCRIPT ON THIS PAGE -->
+
+    <!-- GOOGLE FONTS LINK: -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 <body>
+   <!-- THE USER DECIDES HERE IF THEY WANT TO GO OUT OR STAY IN. -->
+   <div class="jumbotron"> <!-- Jumbotron HTML-->
+    <h5>Food Processor</h5> 
+    <p>Find your flavor!</p> 
+  </div> <!-- JUMBOTRON HTML END-->
 
-
-        <div class="jumbotron"> <!-- Jumbotron HTML-->
-            <h5>Food Processor</h5> 
-            <p>Find your flavor!</p> 
-          </div> <!-- JUMBOTRON HTML END-->
-    
-            <div class="container">
-                    <div id="info-window"> <!-- The info window that pops up when things are clicked upon.-->
-                <!-- OPTIONS FOR GOING OUT -->
+<div class="container">
+            <div id="info-window"> <!-- The info window that pops up when things are clicked upon.-->
+        
                 <form>
                         <div class="form-group">
-                            <label for="stay-in-or-go-out">Do you want to change your decision?</label>
+                            <label for="stay-in-or-go-out">Do you want to stay in or go out?</label>
                         </div> 
                         <a href ="stay-in.html" button class="btn btn-primary"  id="select-decision-one" type="submit" a href ="stay-in.html"> Stay In</button>
                              </a> 
                              <a href ="indexGoOut1.html" button class="btn btn-primary"  id="select-decision-two" type="submit" a href ="indexGoOut1.html"> Go Out    </button>
                              </a> 
                              <a href ="index.html" button class="btn btn-primary"  id="select-decision-three" type="submit" a href ="index.html"> I can't decide    </button>
-                                </a>
-                            </form>
-        
-    <div class="stay-in"></div>
-        <h3>Search for recipes by keyword(s)...</h3>
-        <p>...like "Mushroom Pizza", "Korean BBQ", or "Chicken"...</p>
-        <div id="search-option">
-            <form>
-                <p id="by-ingredient">
-                    <input type="text" id="keyword">
-                    <button class="search">Search</button>
-                </p>
-            </form>
-        </div>
-        <p>...and view local grocery stores on the map.</p>
-        <div>
-            <table style="width: 100%" id="results-table">
-                <thead>
-                    
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="assets/javascript/stay-in.js"></script>
-</body>
-</html>
+                             </a>
+                    </form>
+    
+            </div> <!-- div class info window div end -->
+        </div> <!-- div class map div end -->
+    
+   
+    </form>
+    </body>
+    </html>
