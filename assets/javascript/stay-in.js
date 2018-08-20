@@ -16,7 +16,7 @@ $(".search").on("click", function(event) {
 
         $("#results-table > thead").html('<tr id="headings"><th>Recipe Name</th><th>Ingredients</th><th class="yield">Servings</th><th class="source">Source</th></tr>');
 
-        for (var i = 0; i < response.hits.length; i++) {
+        for (var i = 1; i <= 5; i++) {
             var result = response.hits[i].recipe;
             var newRow = $("<tr>");
 
@@ -36,6 +36,59 @@ $(".search").on("click", function(event) {
 
             $("#results-table > tbody").append(newRow);
         }
+
+        $("#show").html("<button id='more'>Show More</button>");
+
+        $(document).on("click", "#more", function(event) {
+            for (var i = 6; i <= response.hits.length; i++) {
+                var result = response.hits[i].recipe;
+                var newRow = $("<tr>");
+    
+                newRow.append("<td class='label'>" + result.label + "</td>");
+    
+                var cell = $("<td class='ingr'>");
+                var list = $("<ol>");
+                for (var j = 0; j < result.ingredientLines.length; j++) {
+                    var ingr = result.ingredientLines[j];
+                    list.append("<li>" + ingr + "</li>");
+                }
+    
+                cell.append(list);
+                newRow.append(cell);
+                newRow.append("<td class='yield'>" + result.yield + "</td>");
+                newRow.append("<td class='source'><a target=_blank href='" + result.url + "'>" + result.source + "</a></td>");
+    
+                $("#results-table > tbody").append(newRow);
+
+                $("#show").html("<button id='less'>Show Less</button>");
+            }
+        })
+
+        $(document).on("click", "#less", function(event) {
+            $("#results-table > tbody").html("");
+            for (var i = 1; i <= 5; i++) {
+                var result = response.hits[i].recipe;
+                var newRow = $("<tr>");
+    
+                newRow.append("<td class='label'>" + result.label + "</td>");
+    
+                var cell = $("<td class='ingr'>");
+                var list = $("<ol>");
+                for (var j = 0; j < result.ingredientLines.length; j++) {
+                    var ingr = result.ingredientLines[j];
+                    list.append("<li>" + ingr + "</li>");
+                }
+    
+                cell.append(list);
+                newRow.append(cell);
+                newRow.append("<td class='yield'>" + result.yield + "</td>");
+                newRow.append("<td class='source'><a target=_blank href='" + result.url + "'>" + result.source + "</a></td>");
+    
+                $("#results-table > tbody").append(newRow);
+                $("#show").html("");
+                $("#show").html("<button id='more'>Show More</button>");
+            }
+        })
     })
 
     $("#keyword").val("");
