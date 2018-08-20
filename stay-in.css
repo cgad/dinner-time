@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(238, 213, 180);
+    margin: 20px;
+}
+
+/* td {
+    width: 25%;
+} */
+
+td, th {
+    vertical-align: text-top;
+}
+
+td {
+    border-bottom: solid 1px darkgray;
+    padding-top: 20px;
+}
+
+th {
+    border-bottom: solid 2px darkgray;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.label {
+    text-align: center;
+}
+
+.ingr {
+    text-align: left;
+}
+
+#results {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#results:hover {
+    white-space: normal;
+}
+
+.label {
+    font-weight: 700;
+}
+
+.source .yield {
+    width: 20%;
+    text-align: center;
+}
+
+#headings {
+    text-align: center;
+}
