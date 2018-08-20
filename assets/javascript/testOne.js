@@ -28,7 +28,7 @@ var pos;
     console.log("hello");
     console.log($("#grocery-store-type").val())
     search = $("#grocery-store-type").val()
-    icon = "assets/javascript/supermarket.png"
+    icon = "assets/images/supermarket.png"
     type = "store"
     initMap()
   });
@@ -38,7 +38,7 @@ var pos;
     console.log("hello");
     console.log($("#food-type").val())
     search = $("#food-type").val()
-    icon = "assets/javascript/restaurant.png"
+    icon = "assets/images/restaurant.png"
     type = "restaurant"
     initMap()
   });
