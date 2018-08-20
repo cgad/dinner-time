@@ -48,6 +48,12 @@ font-family: 'Pacifico', cursive;
 margin-bottom: 20px;
 }
 
+#select-decision, #select-food-type {
+background-color: aquamarine;
+color: rgb(70, 70, 70);
+font-family: 'Pacifico', cursive;
+}
+
 h5 {
     font-family: 'Pacifico', cursive;
     font-size: 50px;
