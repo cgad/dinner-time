@@ -3,10 +3,6 @@ body {
     margin: 20px;
 }
 
-/* td {
-    width: 25%;
-} */
-
 td, th {
     vertical-align: text-top;
 }
