@@ -14,16 +14,16 @@ $(".search").on("click", function(event) {
      .then(function(response) {
         console.log(response);
 
-        $("#results-table > thead").html('<tr><th>Recipe Name</th><th>Ingredients</th><th>Servings</th><th>Source</th></tr>');
+        $("#results-table > thead").html('<tr id="headings"><th>Recipe Name</th><th>Ingredients</th><th class="yield">Servings</th><th class="source">Source</th></tr>');
 
         for (var i = 0; i < response.hits.length; i++) {
             var result = response.hits[i].recipe;
             var newRow = $("<tr>");
 
-            newRow.append("<td>" + result.label + "</td>");
+            newRow.append("<td class='label'>" + result.label + "</td>");
 
-            var cell = $("<td>");
-            var list = $("<ul>");
+            var cell = $("<td class='ingr'>");
+            var list = $("<ol>");
             for (var j = 0; j < result.ingredientLines.length; j++) {
                 var ingr = result.ingredientLines[j];
                 list.append("<li>" + ingr + "</li>");
@@ -31,8 +31,8 @@ $(".search").on("click", function(event) {
 
             cell.append(list);
             newRow.append(cell);
-            newRow.append("<td>" + result.yield + "</td>");
-            newRow.append("<td><a target=_blank href='" + result.url + "'>" + result.source + "</a></td>");
+            newRow.append("<td class='yield'>" + result.yield + "</td>");
+            newRow.append("<td class='source'><a target=_blank href='" + result.url + "'>" + result.source + "</a></td>");
 
             $("#results-table > tbody").append(newRow);
         }
