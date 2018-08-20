@@ -69,24 +69,10 @@ var pos;
     console.log(results);
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       for (var i = 0; i < results.length; i++) {
+
+
         console.log(results[i].name)
-        var googleResults = $("<div class=gifs>");
-        var names = $("<p id='name-text'>");
-        names.text("Name: " + results[i].name);
-        var hours = $("<p id='hours-text'>");
-        hours.text("Hours: " + results[i].opening_hours.open_now);
-        var location = $("<p id='location-text'>");
-        location.text("Location: " + results[i].vicinity)
-        var price = $("<p id='price-text'>");
-        price.text("Price: " + results[i].price_level);
-        var rating = $("<p id='rating-text'>");
-        rating.text("Rating: " + results[i].rating)
-        googleResults.append(names);
-        googleResults.append(hours);
-        googleResults.append(location);
-        googleResults.append(price);
-        googleResults.append(rating);
-        $("#return-info").prepend(googleResults);
+        
       
         usePlaceId(results[i]);
         // createMarker(results[i]);
@@ -108,6 +94,31 @@ var pos;
   
     function callback(place, status) {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
+        console.log(place)
+        var googleResults = $("<div class='gifs'>");
+        var googleHours = $("<div class='hours'>");
+        var names = $("<p id='name-text'>");
+        names.text("Name: " + place.name);
+        var phoneNumber = $("<p id='phoneNumber-text'>");
+        phoneNumber.text("Phone Number: " + place.formatted_phone_number);
+        var location = $("<p id='location-text'>");
+        location.text("Location: " + place.vicinity)
+        var hoursData = place.opening_hours.weekday_text;
+        for (var i = 0; i < hoursData.length; i++) {
+          var day = $("<p>").text(hoursData[i]);
+          googleHours.append(day);
+        };
+        var price = $("<p id='price-text'>");
+        price.text("Price: " + place.price_level);
+        var rating = $("<p id='rating-text'>");
+        rating.text("Rating: " + place.rating)
+        googleResults.append(names);
+        googleResults.append(googleHours);
+        googleResults.append(phoneNumber)
+        googleResults.append(location);
+        googleResults.append(price);
+        googleResults.append(rating);
+        $("#return-info").prepend(googleResults);
         createMarker(place);
       }
     }
