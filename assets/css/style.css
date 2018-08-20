@@ -60,3 +60,12 @@ h5 {
     font-size: 50px;
     color: aquamarine;
 }
+
+.source, .yield, #headings {
+    text-align: center;
+}
+
+/* this doesn't work for some reason to center the button */
+#more, #less {
+    margin: 0 auto;
+}
