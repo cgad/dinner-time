@@ -11,6 +11,8 @@ body {
       color: aquamarine;
       background-color:rgba(0, 0, 0, 0.6);
       height: 100vh;
+      font-family: 'Coiny', cursive;
+      padding: 20px 10px;
 }
 
 .jumbotron {
@@ -26,7 +28,8 @@ body {
 
 p {
     color: rgb(237, 166, 255);
-    font-size: 20px;
+    font-size: 30px;
+    font-family: 'Coiny', cursive;
 }
 
 #map {
@@ -38,6 +41,13 @@ label {
     margin: 20px 20px;
 }
 
+.btn-primary {
+background-color: aquamarine;
+color: rgb(70, 70, 70);
+font-family: 'Pacifico', cursive;
+margin-bottom: 20px;
+}
+
 #select-decision, #select-food-type {
 background-color: aquamarine;
 color: rgb(70, 70, 70);
@@ -46,6 +56,6 @@ font-family: 'Pacifico', cursive;
 
 h5 {
     font-family: 'Pacifico', cursive;
-    font-size: 30px;
+    font-size: 50px;
     color: aquamarine;
 }
