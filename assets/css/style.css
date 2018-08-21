@@ -120,12 +120,6 @@ th {
     width: 100%;
 }
 
-.clearfix::after {
-    content: “”;
-    display: block;
-    clear: both;
-}
-
 @media only screen and (max-width: 692px) {
     #map {
         height: 40vh;
