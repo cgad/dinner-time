@@ -25,17 +25,19 @@
     <!--MOMENT LINK: -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- JAVASCRIPT TO PAGE: -->
-    <script type="text/javascript" src="assets/javascript/stay-in.js"></script>
+    <!-- <script type="text/javascript" src="assets/javascript/stay-in.js"></script> -->
     <!-- Google Fonts Link: -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 <body>
 
 
-        <div class="jumbotron"> <!-- Jumbotron HTML-->
-            <h5>Food Processor</h5> 
-            <p>Find your flavor!</p> 
-          </div> <!-- JUMBOTRON HTML END-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container "> <!-- Jumbotron HTML-->
+                    <h5>Food Processor</h5> 
+                    <p>Find your flavor!</p> 
+             </div>
+        </div> <!-- JUMBOTRON HTML END-->
     
             <div class="container">
                     <div id="info-window"> <!-- The info window that pops up when things are clicked upon.-->
@@ -64,6 +66,36 @@
             </form>
         </div>
         <p>...and view local grocery stores on the map.</p>
+        <div class="stay-in"> 
+                <div id="five-recipies">
+                    <div id="ingredients">
+                        <div id="grocery-stores">
+                                <form> <!-- FOOD GENRES TYPES: -->
+                                    <div class="form-group">
+                                        <label for="grocery-store-type">Food Type</label>
+                                         <select name="genres"  id="grocery-store-type">
+                                            <option value="Trader Joe's">Trader Joe's</option>
+                                            <option value="King Soopers">King Soopers</option>
+                                            <option value="Whole Foods">Whole Foods</option>
+                                            <option value="Safeway">Safeway</option>
+                                            <option value="Costco">Costco</option>
+                                            <option value="Walmart">Walmart</option>
+                                            <option value="Shop Rite">Shop Rite</option>
+                                        </select> <!-- ID HERE -->
+                                    </div>
+                                    <button class="btn btn-primary" id="select-store-type" type="submit">Submit</button>
+                                  </form>
+                                  <div id="#hoverTry"></div>
+            
+                        </div> <!-- DIV id for grocery-stores end -->
+                    </div> <!-- DIV id for Ingredients end.-->
+                </div> <!-- Div id end for five recipies. -->
+            </div> <!-- div class stay in info div end -->
+        <div class="map-info">
+            <div id="map">
+
+            </div>
+        </div>
         <div>
             <table style="width: 100%" id="results-table">
                 <thead>
@@ -79,6 +111,9 @@
         </div>
     </div>
 
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0JwizcvstgWDQ6bVfXDc_KoaMmwj-VAA&libraries=places&callback=initMap" async defer></script>
     <script type="text/javascript" src="assets/javascript/stay-in.js"></script>
+    <script type="text/javascript" src="assets/javascript/testOne.js"></script>
 </body>
 </html>

@@ -92,4 +92,7 @@ $(".search").on("click", function(event) {
     })
 
     $("#keyword").val("");
+
+    
 })
+

@@ -13,7 +13,7 @@ body {
       background-color:rgba(0, 0, 0, 0.6);
       height: 100vh;
       font-family: 'Coiny', cursive;
-      padding: 20px 10px;
+      /* padding: 20px 10px; */
 }
 
 .jumbotron {
@@ -68,4 +68,8 @@ h5 {
 /* this doesn't work for some reason to center the button */
 #more, #less {
     margin: 0 auto;
+}
+.map-info {
+    color: black;
+
 }
