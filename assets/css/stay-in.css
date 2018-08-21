@@ -1,0 +1,129 @@
+html { 
+    background: url(../images/map.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+  }
+  
+
+body {
+      color: aquamarine;
+      background-color:rgba(0, 0, 0, 0.6);
+      height: 100vh;
+      font-family: 'Coiny', cursive;
+      /* padding: 20px 10px; */
+}
+
+.jumbotron {
+    background: url(../images/jumbotron.jpg)no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* opacity: .65; */
+   
+}
+
+p {
+    color: gold;
+    font-size: 30px;
+    font-family: 'Coiny', cursive;
+}
+
+#stay-in-instr {
+    font-size: 24px;
+}
+
+#select-store {
+    margin: 5px;
+}
+
+#select-store:hover {
+    background-color: white;
+    border-color: white;
+    color: rgb(70, 70, 70);
+}
+
+#by-ingredient {
+    margin-bottom: 0px;
+}
+
+#scroll {
+    font-size: 18px;
+    color: rgb(233, 231, 231);
+}
+
+#keyword {
+    margin-bottom: 5px;
+}
+
+#choose-store {
+    font-size: 22px;
+    color: rgb(233, 231, 231);
+}
+
+#map {
+    height: 40vh;
+    width: 60vh;
+    margin-bottom: 25px;
+}
+
+label {
+    margin: 20px 20px;
+}
+
+.btn-primary {
+    background-color: aquamarine;
+    border-color: aquamarine;
+    color: rgb(70, 70, 70);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    border-color: white;
+    color: rgb(70, 70, 70);
+}
+
+#select-decision, #select-food-type, #select-store {
+    background-color: aquamarine;
+    border-color: aquamarine;
+    color: rgb(70, 70, 70);
+    font-family: 'Pacifico', cursive;
+}
+
+h5 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: aquamarine;
+}
+
+.source, .yield, #headings {
+    text-align: center;
+}
+
+table {
+    background-color: lightgrey;
+    color: rgb(14,90,65);
+}
+
+th {
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+col-xs-12, .col-sm-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 692px) {
+    #map {
+        height: 40vh;
+        width: 40vh;
+        margin-top: 25px;
+    }  
+}
