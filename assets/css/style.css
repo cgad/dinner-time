@@ -116,14 +116,23 @@ th {
 
 }
 
-.col-xs-12, .col-sm-12 {
+col-xs-12, .col-sm-12 {
     width: 100%;
 }
+<<<<<<< HEAD
+ .clearfix::after {
+    content: “”;
+    display: block;
+    clear: both;
+}
+ @media only screen and (max-width: 692px) {
+=======
 
 @media only screen and (max-width: 692px) {
+>>>>>>> d5a4a01c8bcccd481eb31ae881fe432b1b1cba25
     #map {
         height: 40vh;
         width: 40vh;
         margin-top: 25px;
-    }
+    }  
 }
