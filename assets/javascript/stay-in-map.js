@@ -18,15 +18,13 @@ var pos;
   var type;
   var icon;
 
-  
-
-  $("#select-food-type").on("click", function(event) {
+  $("#select-store").on("click", function(event) {
     event.preventDefault();
     // console.log("hello");
-    // console.log($("#food-type").val())
-    search = $("#food-type").val()
-    icon = "assets/images/restaurant.png"
-    type = "restaurant"
+    // console.log($("#grocery-store-type").val())
+    search = $("#grocery-store-type").val()
+    icon = "assets/images/supermarket.png"
+    type = "store"
     initMap()
   });
   
@@ -41,7 +39,7 @@ var pos;
   
     var request = {
       location: pos,
-      radius: "8046.70",
+      radius: "4828.02",
       keyword: search,
       type: [type]
     };
@@ -81,36 +79,6 @@ var pos;
   
     function callback(place, status) {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
-        // console.log(place)
-        var googleResults = $("<div class='map-elements'>");
-          var googleHours = $("<div class='hours'>");
-          var names = $("<p id='name-text'>");
-          names.text("Name: " + place.name);
-          var phoneNumber = $("<p id='phoneNumber-text'>");
-          phoneNumber.text("Phone Number: " + place.formatted_phone_number);
-          var location = $("<p id='location-text'>");
-          location.text("Location: " + place.formatted_address);
-          // HOURS DATA BELOW
-          var hoursData = place.opening_hours.weekday_text;
-         for (var i = 0; i < hoursData.length; i++) {
-           var day = $("<p>").text(hoursData[i]);
-           googleHours.append(day);
-          };
-          // HOURS DATA 
-          var price = $("<p id='price-text'>");
-           price.text("Price: " + place.price_level + " out of 3 ")
-          var rating = $("<p id='rating-text'>");
-          rating.text("Rating: " + place.rating + " out of 5 ")
-          var blank = $("<p id='blank-text'>");
-         blank.text("--------------------------------------------");
-        googleResults.append(names);
-        googleResults.append(googleHours);
-        googleResults.append(phoneNumber)
-        googleResults.append(location);
-        googleResults.append(price);
-        googleResults.append(rating);
-        googleResults.append(blank)
-        $("#return-info").prepend(googleResults);
         createMarker(place);
       }
     }
