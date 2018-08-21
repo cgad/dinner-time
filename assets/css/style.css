@@ -78,3 +78,9 @@ th {
     font-size: 20px;
 
 }
+
+
+.price {
+    background: url(../images/dollarsign.jpeg);
+    color: red;
+}

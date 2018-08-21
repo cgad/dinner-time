@@ -25,8 +25,8 @@ var pos;
   
   $("#select-store-type").on("click", function(event) {
     event.preventDefault();
-    console.log("hello");
-    console.log($("#grocery-store-type").val())
+    // console.log("hello");
+    // console.log($("#grocery-store-type").val())
     search = $("#grocery-store-type").val()
     icon = "assets/images/supermarket.png"
     type = "store"
@@ -35,8 +35,8 @@ var pos;
 
   $("#select-food-type").on("click", function(event) {
     event.preventDefault();
-    console.log("hello");
-    console.log($("#food-type").val())
+    // console.log("hello");
+    // console.log($("#food-type").val())
     search = $("#food-type").val()
     icon = "assets/images/restaurant.png"
     type = "restaurant"
@@ -66,12 +66,12 @@ var pos;
   
   function callback(results, status) {
     if (search) {
-    console.log(results);
+    // console.log(results);
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       for (var i = 0; i < results.length; i++) {
 
 
-        console.log(results[i].name)
+        // console.log(results[i].name)
         
       
         usePlaceId(results[i]);
@@ -94,7 +94,7 @@ var pos;
   
     function callback(place, status) {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
-        console.log(place)
+        // console.log(place)
         var googleResults = $("<div class='map-elements'>");
           var googleHours = $("<div class='hours'>");
           var names = $("<p id='name-text'>");
@@ -102,16 +102,18 @@ var pos;
           var phoneNumber = $("<p id='phoneNumber-text'>");
           phoneNumber.text("Phone Number: " + place.formatted_phone_number);
           var location = $("<p id='location-text'>");
-          location.text("Location: " + place.vicinity)
+          location.text("Location: " + place.formatted_address);
+          // HOURS DATA BELOW
           var hoursData = place.opening_hours.weekday_text;
          for (var i = 0; i < hoursData.length; i++) {
            var day = $("<p>").text(hoursData[i]);
            googleHours.append(day);
           };
+          // HOURS DATA 
           var price = $("<p id='price-text'>");
-          price.text("Price: " + place.price_level);
+           price.text("Price: " + place.price_level + " out of 3 ")
           var rating = $("<p id='rating-text'>");
-          rating.text("Rating: " + place.rating)
+          rating.text("Rating: " + place.rating + " out of 5 ")
           var blank = $("<p id='blank-text'>");
          blank.text("--------------------------------------------");
         googleResults.append(names);
@@ -157,6 +159,6 @@ var pos;
     google.maps.event.addListener(marker, "click", function () {
       infowindow.setContent(place.name);
       infowindow.open(map, this);
-      console.log(this);
+      // console.log(this);
     });
   } // End Google Map
