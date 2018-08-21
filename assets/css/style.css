@@ -26,17 +26,48 @@ body {
    
 }
 
-
-
 p {
     color: gold;
     font-size: 30px;
     font-family: 'Coiny', cursive;
 }
 
+#stay-in-instr {
+    font-size: 24px;
+}
+
+#select-store {
+    margin: 5px;
+}
+
+#select-store:hover {
+    background-color: white;
+    border-color: white;
+    color: rgb(70, 70, 70);
+}
+
+#by-ingredient {
+    margin-bottom: 0px;
+}
+
+#scroll {
+    font-size: 18px;
+    color: rgb(233, 231, 231);
+}
+
+#keyword {
+    margin-bottom: 5px;
+}
+
+#choose-store {
+    font-size: 22px;
+    color: rgb(233, 231, 231);
+}
+
 #map {
-    height: 50vh;
-    width: 100vh;
+    height: 40vh;
+    width: 60vh;
+    margin-bottom: 25px;
 }
 
 label {
@@ -45,13 +76,21 @@ label {
 
 .btn-primary {
     background-color: aquamarine;
+    border-color: aquamarine;
     color: rgb(70, 70, 70);
     font-family: 'Pacifico', cursive;
     margin-bottom: 20px;
 }
 
-#select-decision, #select-food-type {
+.btn-primary:hover {
+    background-color: white;
+    border-color: white;
+    color: rgb(70, 70, 70);
+}
+
+#select-decision, #select-food-type, #select-store {
     background-color: aquamarine;
+    border-color: aquamarine;
     color: rgb(70, 70, 70);
     font-family: 'Pacifico', cursive;
 }
@@ -65,8 +104,6 @@ h5 {
 .source, .yield, #headings {
     text-align: center;
 }
-
-
 
 table {
     background-color: lightgrey;
