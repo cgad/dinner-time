@@ -116,15 +116,9 @@ th {
 
 }
 
-col-xs-12, .col-sm-12 {
+.col-xs-12, .col-sm-12 {
     width: 100%;
 }
- .clearfix::after {
-    content: “”;
-    display: block;
-    clear: both;
-}
- @media only screen and (max-width: 692px) {
 
 @media only screen and (max-width: 692px) {
     #map {
