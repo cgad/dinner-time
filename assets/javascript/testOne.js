@@ -23,7 +23,7 @@ var pos;
   var icon;
 
   
-  $("#select-store-type").on("click", function(event) {
+  $("#select-store").on("click", function(event) {
     event.preventDefault();
     console.log("hello");
     console.log($("#grocery-store-type").val())
