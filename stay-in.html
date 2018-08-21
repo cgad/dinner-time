@@ -57,22 +57,28 @@
         
     <div class="stay-in"></div>
         <h3>Search for recipes by keyword(s)...</h3>
-        <p>...like "Mushroom Pizza", "Korean BBQ", or "Chicken"...</p>
+        <p id="stay-in-instr">...like "Mushroom Pizza", "Korean BBQ", or "Chicken"...</p>
         <div id="search-option">
             <form>
                 <p id="by-ingredient">
                     <input type="text" id="keyword">
-                    <button class="search">Search</button>
+                    <button class="search">Search*</button>
                 </p>
+                <p id="scroll">*scroll down to view your results</p>
             </form>
         </div>
-        <p>...and view local grocery stores on the map.</p>
-        <div class="stay-in"> 
-                <div id="grocery-stores">
+        <p id="stay-in-instr">...and view local grocery stores on the map.</p>
+
+        <!-- bootstrap row test -->
+        <div class="row">
+            <div class="col-md-3 col-lg-3 col-xs-12 col-sm-12">
+                <div class="stay-in"> 
+                    <div id="grocery-stores clearfix">
                         <form> <!-- FOOD GENRES TYPES: -->
-                            <div class="form-group">
-                                <label for="grocery-store-type">Choose Store</label>
-                                    <select name="genres"  id="grocery-store-type">
+                            <p id="choose-store">Choose Store</p>
+                            <div class="form-group store-list">
+                                <!-- <label for="grocery-store-type">Choose Store</label> -->
+                                <select name="genres"  id="grocery-store-type">
                                     <option value="Trader Joe's">Trader Joe's</option>
                                     <option value="King Soopers">King Soopers</option>
                                     <option value="Whole Foods">Whole Foods</option>
@@ -82,18 +88,25 @@
                                     <option value="Shop Rite">Shop Rite</option>
                                 </select> <!-- ID HERE -->
                             </div>
-                            <button class="btn btn-primary" id="select-store-type" type="submit">Submit</button>
-                            </form>
-                            <div id="#hoverTry"></div>
-    
-                </div> <!-- DIV id for grocery-stores end -->
-            </div> <!-- div class stay in info div end -->
-        <div class="map-info">
-            <div id="map">
-
+                            <button class="btn btn-primary" id="select-store" type="submit">Submit</button>
+                        </form>
+                    </div> <!-- DIV id for grocery-stores end -->
+                </div>
             </div>
+            <div class="col-md-5 col-lg-5 col-xs-12 col-sm-12">
+                <div class="map-info">
+                    <div id="map"> <!-- GOOGLE MAPS NECESSARY DIV-->
+        
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-2"> -->
+            <!-- </div> -->
+            
         </div>
-        <div>
+        
+
+        <div> <!-- recipe search results -->
             <table style="width: 100%" id="results-table">
                 <thead>
                     
@@ -104,14 +117,7 @@
             </table>
         </div>
 
-        <div id="show">
-            
-
-
-        </div>
-
-        <div id="map"> <!-- GOOGLE MAPS NECESSARY DIV-->
-
+        <div id="show"> <!-- show more and show less button -->
 
         </div>
         
@@ -119,8 +125,8 @@
 
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0JwizcvstgWDQ6bVfXDc_KoaMmwj-VAA&libraries=places&callback=initMap" async defer></script>
-    <script type="text/javascript" src="assets/javascript/stay-in.js"></script>
-    <script type="text/javascript" src="assets/javascript/testOne.js"></script>
+    <script type="text/javascript" src="assets/javascript/stay-in.js"></script> <!-- Cara's javascript page -->
+    <script type="text/javascript" src="assets/javascript/testOne.js"></script> <!-- Brian's javascript page -->
 
 </body>
 </html>

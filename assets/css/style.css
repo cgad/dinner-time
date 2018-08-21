@@ -26,17 +26,52 @@ body {
    
 }
 
-
-
 p {
     color: gold;
     font-size: 30px;
     font-family: 'Coiny', cursive;
 }
 
+#stay-in-instr {
+    font-size: 24px;
+}
+
+#select-store, #grocery-store-type {
+    float: right;
+}
+
+#select-store {
+    margin-top: 5px;
+}
+
+#select-store:hover {
+    background-color: white;
+    border-color: white;
+    color: rgb(70, 70, 70);
+}
+
+#choose-store {
+    float: left;
+}
+
+#by-ingredient {
+    margin-bottom: 3px;
+}
+
+#scroll {
+    font-size: 18px;
+    color: rgb(233, 231, 231);
+}
+
+#choose-store {
+    font-size: 22px;
+    color: rgb(233, 231, 231);
+}
+
 #map {
-    height: 50vh;
-    width: 100vh;
+    height: 40vh;
+    width: 60vh;
+    margin-bottom: 25px;
 }
 
 label {
@@ -45,13 +80,21 @@ label {
 
 .btn-primary {
     background-color: aquamarine;
+    border-color: aquamarine;
     color: rgb(70, 70, 70);
     font-family: 'Pacifico', cursive;
     margin-bottom: 20px;
 }
 
-#select-decision, #select-food-type {
+.btn-primary:hover {
+    background-color: white;
+    border-color: white;
+    color: rgb(70, 70, 70);
+}
+
+#select-decision, #select-food-type, #select-store {
     background-color: aquamarine;
+    border-color: aquamarine;
     color: rgb(70, 70, 70);
     font-family: 'Pacifico', cursive;
 }
@@ -66,8 +109,6 @@ h5 {
     text-align: center;
 }
 
-
-
 table {
     background-color: lightgrey;
     color: rgb(14,90,65);
@@ -77,4 +118,14 @@ th {
     font-weight: 700;
     font-size: 20px;
 
+}
+
+.col-xs-12, .col-sm-12 {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: “”;
+    display: block;
+    clear: both;
 }
