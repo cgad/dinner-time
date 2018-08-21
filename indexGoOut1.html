@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Travel Project</title>
+    <title>Food Project</title>
     <!-- SCRIPTS AND CSS BELOW: -->
     <!-- RESET, THEN BOOTSTRAP, THEN STYLE, THEN FIREBASE, THEN AJAX, THEN MATERIALIZE, THEN MOMENT, THEN JAVASCRIPT.-->
      <!-- RESET CSS: -->
@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!--MOMENT LINK: -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <!-- JAVASCRIPT TO PAGE: -->
+    <!-- JAVASCRIPT TO TEST ONE GO OUT PAGE: -->
     <script type="text/javascript" src="assets/javascript/testOne.js"></script>
     <!-- Google Fonts Link: -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -45,7 +45,7 @@
                          </a> 
                          <a href ="indexGoOut1.html" button class="btn btn-primary"  id="select-decision-two" type="submit" a href ="indexGoOut1.html"> Go Out    </button>
                          </a> 
-                         <a href ="index.html" button class="btn btn-primary"  id="select-decision-three" type="submit" a href ="index.html"> I can't decide    </button>
+                         <a href ="index.html" button class="btn btn-primary"  id="select-decision-three" type="submit" a href ="index.html"> I Can't Decide!   </button>
                             </a>
                         </form>
 
@@ -64,10 +64,15 @@
                                         <label for="food-type">What type of food are you interested in eating?</label>
                                          <select name="genres"  id="food-type">
                                             <option value="italian">Italian</option>
+                                            <option value="japanese">Japanese</option>
+                                            <option value="french">French</option>
+                                            <option value="thai">Thai</option>
+                                            <option value="vietnamese">Vietnamese</option>
                                             <option value="american">American</option>
                                             <option value="indian">Indian</option>
                                             <option value="mexican">Mexican</option>
                                             <option value="chinese">Chinese</option>
+                                            <option value="british">British</option>
                                         </select> <!-- ID HERE -->
                                     </div>
                                     <button class="btn btn-primary" id="select-food-type" type="submit">Submit</button>
@@ -77,8 +82,11 @@
             
 <div class="container">
     <div id="return-info">
+        <div id="return-price">
 
-    </div> <!-- Div class return info end -->
+
+        </div> <!-- Div id return price end.-->
+    </div> <!-- Div id return info end -->
 </div> <!-- Div class Container end -->
 
 
