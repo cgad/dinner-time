@@ -43,16 +43,16 @@ label {
 }
 
 .btn-primary {
-background-color: aquamarine;
-color: rgb(70, 70, 70);
-font-family: 'Pacifico', cursive;
-margin-bottom: 20px;
+    background-color: aquamarine;
+    color: rgb(70, 70, 70);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
 }
 
 #select-decision, #select-food-type {
-background-color: aquamarine;
-color: rgb(70, 70, 70);
-font-family: 'Pacifico', cursive;
+    background-color: aquamarine;
+    color: rgb(70, 70, 70);
+    font-family: 'Pacifico', cursive;
 }
 
 h5 {
@@ -65,11 +65,15 @@ h5 {
     text-align: center;
 }
 
-/* this doesn't work for some reason to center the button */
-#more, #less {
-    margin: 0 auto;
+
+
+table {
+    background-color: lightgrey;
+    color: rgb(14,90,65);
 }
-.map-info {
-    color: black;
+
+th {
+    font-weight: 700;
+    font-size: 20px;
 
 }
