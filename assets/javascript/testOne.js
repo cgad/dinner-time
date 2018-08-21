@@ -49,7 +49,7 @@ var pos;
   }
     map = new google.maps.Map(document.getElementById("map"), {
       center: pos,
-      zoom: 14
+      zoom: 12
     });
   
     var request = {
@@ -142,6 +142,7 @@ var pos;
       icon: icon
     });
     marker.addListener('mouseover', function() {
+      infowindow.setContent(place.name);
       infowindow.open(map, this);
     });
     marker.addListener('mouseout', function() {
