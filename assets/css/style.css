@@ -36,12 +36,8 @@ p {
     font-size: 24px;
 }
 
-#select-store, #grocery-store-type {
-    float: right;
-}
-
 #select-store {
-    margin-top: 5px;
+    margin: 5px;
 }
 
 #select-store:hover {
@@ -50,17 +46,17 @@ p {
     color: rgb(70, 70, 70);
 }
 
-#choose-store {
-    float: left;
-}
-
 #by-ingredient {
-    margin-bottom: 3px;
+    margin-bottom: 0px;
 }
 
 #scroll {
     font-size: 18px;
     color: rgb(233, 231, 231);
+}
+
+#keyword {
+    margin-bottom: 5px;
 }
 
 #choose-store {
@@ -128,4 +124,12 @@ th {
     content: “”;
     display: block;
     clear: both;
+}
+
+@media only screen and (max-width: 692px) {
+    #map {
+        height: 40vh;
+        width: 40vh;
+        margin-top: 25px;
+    }
 }
