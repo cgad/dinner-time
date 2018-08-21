@@ -116,11 +116,11 @@ th {
 
 }
 
-.col-xs-12, .col-sm-12 {
+col-xs-12, .col-sm-12 {
     width: 100%;
 }
 
- @media only screen and (max-width: 692px) {
+@media only screen and (max-width: 692px) {
     #map {
         height: 40vh;
         width: 40vh;
