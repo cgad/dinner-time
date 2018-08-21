@@ -116,8 +116,18 @@ th {
 
 }
 
-
-.price {
-    background: url(../images/dollarsign.jpeg);
-    color: red;
+col-xs-12, .col-sm-12 {
+    width: 100%;
+}
+ .clearfix::after {
+    content: “”;
+    display: block;
+    clear: both;
+}
+ @media only screen and (max-width: 692px) {
+    #map {
+        height: 40vh;
+        width: 40vh;
+        margin-top: 25px;
+    }  
 }
