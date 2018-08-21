@@ -13,7 +13,7 @@ body {
       background-color:rgba(0, 0, 0, 0.6);
       height: 100vh;
       font-family: 'Coiny', cursive;
-      padding: 20px 10px;
+      /* padding: 20px 10px; */
 }
 
 .jumbotron {
@@ -66,6 +66,8 @@ h5 {
     text-align: center;
 }
 
+
+
 table {
     background-color: lightgrey;
     color: rgb(14,90,65);
@@ -74,4 +76,5 @@ table {
 th {
     font-weight: 700;
     font-size: 20px;
+
 }
