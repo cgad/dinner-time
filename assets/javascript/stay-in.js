@@ -37,7 +37,7 @@ $(".search").on("click", function(event) {
             $("#results-table > tbody").append(newRow);
         }
 
-        $("#show").html("<button id='more'>Show More</button>");
+        $("#show").html("<button class='btn-primary' id='more'>Show More</button>");
 
         $(document).on("click", "#more", function(event) {
             for (var i = 6; i <= response.hits.length; i++) {
@@ -60,7 +60,7 @@ $(".search").on("click", function(event) {
     
                 $("#results-table > tbody").append(newRow);
 
-                $("#show").html("<button id='less'>Show Less</button>");
+                $("#show").html("<button id='less' class='btn-primary'>Show Less</button>");
             }
         })
 
@@ -86,7 +86,7 @@ $(".search").on("click", function(event) {
     
                 $("#results-table > tbody").append(newRow);
                 $("#show").html("");
-                $("#show").html("<button id='more'>Show More</button>");
+                $("#show").html("<button class='btn-primary' id='more'>Show More</button>");
             }
         })
     })

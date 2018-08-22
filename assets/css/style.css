@@ -34,13 +34,22 @@ p, h3  {
     1px 1px 0 #000;
 }
 
+.choice {
+    font-family: 'Coiny', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
 #food-type{
     padding-bottom: 5px;
 }
 
+.hours {
+    margin-left: 40px;
+}
+
 #keyword {
     color:  rgb(70,70,70); 
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
 }
 
 #map {
@@ -54,7 +63,7 @@ p, h3  {
 #choice {
     color: rgb(237, 166, 255);
     font-size: 30px;
-    font-family: 'Coiny', cursive;
+    font-family: 'Coiny', Arial, Helvetica, sans-serif;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -66,9 +75,25 @@ p, h3  {
 
 .btn-primary  {
     background-color: aquamarine;
+    border-color: aquamarine;
     color: rgb(70, 70, 70);
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
     margin-bottom: 40px;
+}
+
+#select-food-type:hover {
+    background-color: rgb(207, 207, 207);
+    border-color: rgb(207, 207, 207);
+    color: rgb(70, 70, 70);
+}
+
+#select-decision-one:hover, #select-decision-two:hover, #select-decision-three:hover {
+    color: rgb(70, 70, 70);
+}
+
+.food-type {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(237, 166, 255);
 }
 
 .buttons {
@@ -78,11 +103,11 @@ p, h3  {
 .search {
     background-color: aquamarine;
     color: rgb(70, 70, 70);
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
 }
 
 h5 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
     font-size: 50px;
     color: aquamarine;
     text-shadow:
@@ -96,7 +121,7 @@ h5 {
 h6{
     color: rgb(237, 166, 255);
     font-size: 30px;
-    font-family: 'Coiny', cursive;
+    font-family: 'Coiny', Arial, Helvetica, sans-serif;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
