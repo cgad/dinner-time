@@ -119,15 +119,14 @@ h3  {
 }
 
 h5 {
-    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
+    font-family: 'Coiny', cursive;
     font-size: 50px;
-    color: aquamarine;
+    color: rgb(237, 166, 255);
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-
 }
 
 h6{
