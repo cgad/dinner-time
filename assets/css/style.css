@@ -10,7 +10,7 @@ html {
 body {
    background-color: rgb(0,0,0,0);
    color: aquamarine;
-    font-family: 'Coiny', cursive;
+    font-family: 'Coiny', Arial, Helvetica, sans-serif;
     padding: 20px;
 }
 
@@ -23,10 +23,10 @@ body {
 }
 
 
-p, h3  {
+h3  {
     color: rgb(237, 166, 255);
     font-size: 30px;
-    font-family: 'Coiny', cursive;
+    font-family: 'Coiny', Arial, Helvetica, sans-serif;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -37,6 +37,18 @@ p, h3  {
 .choice {
     font-family: 'Coiny', Arial, Helvetica, sans-serif;
     font-size: 24px;
+}
+
+#name-text, .hours, #phoneNumber-text, #location-text, #price-text, #rating-text {
+    font-family: 'Coiny', Arial, Helvetica, sans-serif;
+}
+
+#name-text {
+    font-size: 26px;
+}
+
+.hours {
+    font-size: 20px;
 }
 
 #food-type{

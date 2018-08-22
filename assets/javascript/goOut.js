@@ -85,7 +85,7 @@ var pos;
         var googleResults = $("<div class='map-elements'>");
           var googleHours = $("<div class='hours'>");
           var names = $("<p id='name-text'>");
-          names.text("Name: " + place.name);
+          names.text(place.name);
           var phoneNumber = $("<p id='phoneNumber-text'>");
           phoneNumber.text("Phone Number: " + place.formatted_phone_number);
           var location = $("<p id='location-text'>");
