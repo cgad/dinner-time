@@ -1,19 +1,17 @@
 html { 
-    background: url(../images/map.jpg) no-repeat center center fixed; 
+    background: url(../images/wood.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  
   }
   
 
 body {
-      color: aquamarine;
-      background-color:rgba(0, 0, 0, 0.6);
-      height: 100vh;
-      font-family: 'Coiny', cursive;
-      /* padding: 20px 10px; */
+   background-color: rgb(0,0,0,0);
+   color: aquamarine;
+    font-family: 'Coiny', cursive;
+    padding: 20px;
 }
 
 .jumbotron {
@@ -21,76 +19,64 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    /* opacity: .65; */
-   
+    background-size: cover;   
 }
 
-p {
-    color: gold;
+
+p, h3  {
+    color: rgb(237, 166, 255);
     font-size: 30px;
     font-family: 'Coiny', cursive;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
-#stay-in-instr {
-    font-size: 24px;
-}
-
-#select-store {
-    margin: 5px;
-}
-
-#select-store:hover {
-    background-color: white;
-    border-color: white;
-    color: rgb(70, 70, 70);
-}
-
-#by-ingredient {
-    margin-bottom: 0px;
-}
-
-#scroll {
-    font-size: 18px;
-    color: rgb(233, 231, 231);
+#food-type{
+    padding-bottom: 5px;
 }
 
 #keyword {
-    margin-bottom: 5px;
-}
-
-#choose-store {
-    font-size: 22px;
-    color: rgb(233, 231, 231);
+    color:  rgb(70,70,70); 
+    font-family: 'Pacifico', cursive;
 }
 
 #map {
-    height: 40vh;
-    width: 60vh;
-    margin-bottom: 25px;
+    height: 50vh;
+    width: 100vh;
+    border: 2px solid rgb(207, 207, 207);
+    color: black;
+    margin: 0 auto 40px;
 }
 
-label {
-    margin: 20px 20px;
+#choice {
+    color: rgb(237, 166, 255);
+    font-size: 30px;
+    font-family: 'Coiny', cursive;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    text-align: center;
+    margin: 20px;
 }
 
-.btn-primary {
+.btn-primary  {
     background-color: aquamarine;
-    border-color: aquamarine;
     color: rgb(70, 70, 70);
     font-family: 'Pacifico', cursive;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.btn-primary:hover {
-    background-color: white;
-    border-color: white;
-    color: rgb(70, 70, 70);
+.buttons {
+    text-align: center;
 }
 
-#select-decision, #select-food-type, #select-store {
+.search {
     background-color: aquamarine;
-    border-color: aquamarine;
     color: rgb(70, 70, 70);
     font-family: 'Pacifico', cursive;
 }
@@ -99,6 +85,24 @@ h5 {
     font-family: 'Pacifico', cursive;
     font-size: 50px;
     color: aquamarine;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+
+h6{
+    color: rgb(237, 166, 255);
+    font-size: 30px;
+    font-family: 'Coiny', cursive;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
 }
 
 .source, .yield, #headings {
@@ -106,24 +110,24 @@ h5 {
 }
 
 table {
-    background-color: lightgrey;
-    color: rgb(14,90,65);
+    background-color: rgba(211, 211, 211, 0.815);
+    color: rgb(31, 37, 35);
+    font-family: 'Laila', serif;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 2px, solid, rgb(237, 166, 255); 
 }
 
 th {
     font-weight: 700;
     font-size: 20px;
-
 }
 
-.col-xs-12, .col-sm-12 {
-    width: 100%;
-}
-
-@media only screen and (max-width: 692px) {
-    #map {
-        height: 40vh;
-        width: 40vh;
-        margin-top: 25px;
-    }  
+#return-info {
+    font-family: 'Laila', serif;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
