@@ -43,9 +43,13 @@ p, h3  {
     font-family: 'Pacifico', cursive;
 }
 
+#keyword-ex {
+    font-size: 20px;
+}
+
 #map {
     height: 50vh;
-    width: 100vh;
+    width: 80vh;
     border: 2px solid rgb(207, 207, 207);
     color: black;
     margin: 0 auto 40px;
@@ -64,11 +68,35 @@ p, h3  {
     margin: 20px;
 }
 
-.btn-primary  {
+#scroll {
+    font-size: 16px;
+    color: rgb(238, 238, 238);
+}
+
+#choose-store {
+    font-size: 20px;
+}
+
+#select-store {
+    margin-bottom: 10px;
+}
+
+#select-store:hover, .search:hover {
+    background-color: rgb(238, 238, 238);
+    color: rgb(70, 70, 70);
+    border-color: rgb(238, 238, 238);
+}
+
+.btn-primary {
     background-color: aquamarine;
+    border-color: aquamarine;
     color: rgb(70, 70, 70);
     font-family: 'Pacifico', cursive;
     margin-bottom: 40px;
+}
+
+#select-decision-one:hover, #select-decision-two:hover, #select-decision-three:hover {
+    color: rgb(70, 70, 70);
 }
 
 .buttons {
@@ -130,4 +158,16 @@ th {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+.col-xs-12, .col-sm-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 692px) {
+    #map {
+        height: 45vh;
+        width: 45vh;
+        margin-top: 25px;
+    }
 }
